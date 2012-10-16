@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="BuildPackages" ToolsVersion="4.0">
+
+	<!-- IMPORTS -->
+	<PropertyGroup>
+		<MSBuildCustomTasksPath>$(MSBuildProjectDirectory)\..\Tools\MSBuildTasks</MSBuildCustomTasksPath>
+		<MSBuildCommunityTasksPath>$(MSBuildCustomTasksPath)</MSBuildCommunityTasksPath>
+	</PropertyGroup>
+
+	<Import Project="$(MSBuildCustomTasksPath)\MSBuild.Community.Tasks.Targets" />
+
+	<!-- BUILD USITEBUILDER -->
+	<Target Name="BuildUSiteBuilder">
+		<MSBuild Projects="$(MSBuildProjectDirectory)\uSiteBuilder\package.build.xml" />
+	</Target>
+
+	<!-- PACKAGE -->
+	<Target Name="BuildPackages" DependsOnTargets="BuildUSiteBuilder">
+		<Message Text="Build Packages Success!" />
+	</Target>
+
+</Project>
