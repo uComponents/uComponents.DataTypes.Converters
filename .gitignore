@@ -1,26 +1,16 @@
-# Misc.
-
 .DS_Store
 ._*
-.Spotlight-V100
 .Trashes
 Thumbs.db
 Desktop.ini
-*.orig
-.sass-cache/
-
-# Visual Studio
-
 [Dd]ebug/
 [Rr]elease/
 [Bb]in/
 [Oo]bj/
-
-obj
-bin
 _ReSharper.*
 *.csproj.user
 *.resharper.user
 *.resharper
 *.suo
 *.cache
+*.orig
