@@ -4,3 +4,5 @@ This project is to be used to aim the development of 3rd-party libraries that ma
 
 At present there is support for:
 * [uSiteBuilder](http://usitebuilder.vegaitsourcing.rs/)
+** Multi-Url Picker
+** Url Picker

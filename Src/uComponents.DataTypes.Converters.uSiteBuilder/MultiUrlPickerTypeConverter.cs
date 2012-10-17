@@ -1,32 +1,32 @@
 ﻿using System;
+using uComponents.DataTypes.MultiUrlPicker.Dto;
 using uComponents.DataTypes.UrlPicker;
-using uComponents.DataTypes.UrlPicker.Dto;
 using Vega.USiteBuilder.Types;
 
 namespace uComponents.DataTypes.Converters.uSiteBuilder
 {
-	public class UrlPickerTypeConverter : ICustomTypeConvertor
+	public class MultiUrlPickerTypeConverter : ICustomTypeConvertor
 	{
 		public Type ConvertType
 		{
 			get
 			{
-				return typeof(UrlPickerState);
+				return typeof(MultiUrlPickerState);
 			}
 		}
 
 		public object ConvertValueWhenRead(object inputValue)
 		{
 			if (inputValue is string)
-				return UrlPickerState.Deserialize(inputValue.ToString());
+				return MultiUrlPickerState.Deserialize(inputValue.ToString());
 
 			return inputValue;
 		}
 
 		public object ConvertValueWhenWrite(object inputValue)
 		{
-			if (inputValue is UrlPickerState)
-				((UrlPickerState)inputValue).Serialize(UrlPickerDataFormat.Xml);
+			if (inputValue is MultiUrlPickerState)
+				((MultiUrlPickerState)inputValue).Serialize(UrlPickerDataFormat.Xml, true);
 
 			return inputValue.ToString();
 		}
