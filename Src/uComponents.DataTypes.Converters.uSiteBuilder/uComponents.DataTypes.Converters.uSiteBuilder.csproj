@@ -33,10 +33,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="cms">
+      <HintPath>..\..\Lib\cms.dll</HintPath>
+    </Reference>
+    <Reference Include="interfaces">
+      <HintPath>..\..\Lib\interfaces.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TheFarm.Umbraco.EmbeddedContent">
+      <HintPath>..\..\Lib\TheFarm.Umbraco.EmbeddedContent.dll</HintPath>
+    </Reference>
     <Reference Include="uComponents.Core">
       <HintPath>..\..\Lib\uComponents.Core.dll</HintPath>
       <Private>False</Private>
@@ -45,17 +56,33 @@
       <HintPath>..\..\Lib\uComponents.DataTypes.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Umbraco.Core">
+      <HintPath>..\..\Lib\Umbraco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.MacroEngines">
+      <HintPath>..\..\Lib\umbraco.MacroEngines.dll</HintPath>
+    </Reference>
     <Reference Include="Vega.USiteBuilder">
       <HintPath>..\..\Lib\Vega.USiteBuilder.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="EmbeddedContentListConverter.cs" />
+    <Compile Include="EmbeddedContent\EmbeddedContentAttribute.cs" />
+    <Compile Include="EmbeddedContent\EmbeddedContentPropertyAttribute.cs" />
+    <Compile Include="EmbeddedContent\EmbeddedContentPropertyType.cs" />
+    <Compile Include="EmbeddedContent\Util.cs" />
+    <Compile Include="MapCoordinateTypeConverter.cs" />
+    <Compile Include="Types\MapCoordinate.cs" />
     <Compile Include="MultiUrlPickerTypeConverter.cs" />
+    <Compile Include="MultiNodeTreePickerListConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\VersionInfo.cs" />
     <Compile Include="UrlPickerTypeConverter.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
