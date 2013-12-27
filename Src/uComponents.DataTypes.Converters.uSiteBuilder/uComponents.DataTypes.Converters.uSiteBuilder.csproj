@@ -63,6 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="MapCoordinateTypeConverter.cs" />
+    <Compile Include="Types\MapCoordinate.cs" />
     <Compile Include="MultiUrlPickerTypeConverter.cs" />
     <Compile Include="MultiNodeTreePickerListConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
