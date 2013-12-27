@@ -7,3 +7,8 @@ At present there is support for:
 * [uSiteBuilder](http://usitebuilder.vegaitsourcing.rs/)
     * Multi-Url Picker
     * Url Picker
+	* Multi-Node Tree Picker
+
+* 3rd Party Converters
+	* Embedded Content
+	* Map Coordinate (lat,lng,zoom)
