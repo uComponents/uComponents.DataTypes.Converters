@@ -1,6 +1,4 @@
-﻿using UmbracoCore = Umbraco.Core;
-
-namespace MMGY.Common.Umbraco.SiteBuilder
+﻿namespace uComponents.DataTypes.Converters.uSiteBuilder
 {
     public static class Constants
     {
@@ -17,37 +15,34 @@ namespace MMGY.Common.Umbraco.SiteBuilder
         {
             // Umbraco Built-in DataEditor values
             public const string DropDownListRenderControlName = "Dropdown list";
-            public const string DropDownListRenderControlGuid = UmbracoCore.Constants.PropertyEditors.DropDownList;
+            public const string DropDownListRenderControlGuid = Umbraco.Core.Constants.PropertyEditors.DropDownList;
 
             public const string CheckBoxListRenderControlName = "Checkbox list";
-            public const string CheckBoxListRenderControlGuid = UmbracoCore.Constants.PropertyEditors.CheckBoxList;
+            public const string CheckBoxListRenderControlGuid = Umbraco.Core.Constants.PropertyEditors.CheckBoxList;
 
             public const string UltimatePickerRenderControlName = "Ultimate Picker";
-            public const string UltimatePickerRenderControlGuid = UmbracoCore.Constants.PropertyEditors.UltimatePicker;
-
-            public const string MultiNodeTreePickerControlName = "Multi-Node Tree Picker";
-            public const string MultiNodeTreePickerControlGuid = uComponents.DataTypes.DataTypeConstants.MultiNodeTreePickerId;
+            public const string UltimatePickerRenderControlGuid = Umbraco.Core.Constants.PropertyEditors.UltimatePicker;
 
             // uComponents DataEditor values
+            public const string MultiNodeTreePickerControlName = "Multi-Node Tree Picker";
+            public const string MultiNodeTreePickerControlGuid = DataTypeConstants.MultiNodeTreePickerId;
+
             public const string TextstringArrayControlName = "uComponents: Textstring Array";
-            public const string TextstringArrayControlGuid = uComponents.DataTypes.DataTypeConstants.TextstringArrayId;
+            public const string TextstringArrayControlGuid = DataTypeConstants.TextstringArrayId;
 
             public const string MultipleTextstringControlName = "uComponents-Legacy: Multiple Textstring";
-            public const string MultipleTextstringControlGuid = uComponents.DataTypes.DataTypeConstants.MultipleTextstringId;
+            public const string MultipleTextstringControlGuid = DataTypeConstants.MultipleTextstringId;
 
             public const string MultiUrlPickerControlName = "Multi-Url Picker";
-            public const string MultiUrlPickerControlGuid = uComponents.DataTypes.DataTypeConstants.MultiUrlPickerId;
+            public const string MultiUrlPickerControlGuid = DataTypeConstants.MultiUrlPickerId;
 
             public const string UrlPickerControlName = "Url Picker";
-            public const string UrlPickerControlGuid = uComponents.DataTypes.DataTypeConstants.UrlPickerId;
+            public const string UrlPickerControlGuid = DataTypeConstants.UrlPickerId;
 
-            // Third-Party DataEditor values
-            public const string GoogleMapsControlName = "Google Map";
-            public const string GoogleMapsControlGuid = "1B64EAE2-F9A1-4276-A071-F25DDE6913DD";
-
+            /*
             private static readonly TheFarm.Umbraco.EmbeddedContent.DataEditor EmbeddedContentDataEditor = new TheFarm.Umbraco.EmbeddedContent.DataEditor();
 
-            /// <summary>
+             * /// <summary>
             /// Gets the name of the embedded content control.
             /// </summary>
             /// <value>
@@ -55,10 +50,7 @@ namespace MMGY.Common.Umbraco.SiteBuilder
             /// </value>
             public static string EmbeddedContentControlName
             {
-                get
-                {
-                    return EmbeddedContentDataEditor.DataTypeName;
-                }
+                get { return EmbeddedContentDataEditor.DataTypeName; }
             }
 
             /// <summary>
@@ -69,34 +61,9 @@ namespace MMGY.Common.Umbraco.SiteBuilder
             /// </value>
             public static string EmbeddedContentControlGuid
             {
-                get
-                {
-                    return EmbeddedContentDataEditor.Id.ToString();
-                }
+                get { return EmbeddedContentDataEditor.Id.ToString(); }
             }
-        }
-
-        public static class DataType
-        {
-            // Custom DataType Definition values
-
-            public const string HeroesPickerDataTypeName = "Heroes Picker"; // Multi-Node Tree Picker
-            public const string HeroesPickerDataTypeUniqueId = "686016e7-9f25-49d7-947d-d2261392e03a";
-
-            public const string SubPagesPickerDataTypeName = "SubPages Picker"; // Multi-Node Tree Picker
-            public const string SubPagesPickerDataTypeUniqueId = "04700117-d816-44db-aa7f-ad51b356934f";
-
-            public const string TextstringArrayDataTypeName = "Textstring Array"; // uComponents: Textstring Array
-            public const string TextstringArrayDataTypeUniqueId = "85de75ea-32a5-4b75-8172-51457f910b33";
-
-            public const string MultipleTextstringDataTypeName = "Multiple Textstring"; // uComponents-Legacy: Multiple Textstring
-            public const string MultipleTextstringDataTypeUniqueId = "63c07635-e0fb-4a2a-af63-137ee9a372c9";
-
-            public const string MultiUrlPickerDataTypeName = "Multi-Url Picker";
-            public const string MultiUrlPickerDataTypeUniqueId = "f3277260-a39b-42f3-933a-d54a86f49077";
-
-            public const string MapCoordinatePickerDataTypeName = "Map Coordinate Picker";
-            public const string MapCoordinatePickerDataTypeUniqueId = "ef68a1c4-1812-4d71-9376-77f0ec7696d2";
+            */
         }
     }
 }

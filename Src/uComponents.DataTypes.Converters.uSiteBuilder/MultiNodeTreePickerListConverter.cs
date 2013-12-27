@@ -6,7 +6,7 @@ using umbraco.MacroEngines;
 using Vega.USiteBuilder;
 using Vega.USiteBuilder.Types;
 
-namespace MMGY.Common.Umbraco.SiteBuilder.DataTypes.DataTypeConverters
+namespace uComponents.DataTypes.Converters.uSiteBuilder
 {
     public class MultiNodeTreePickerListConverter : ICustomTypeConvertor
     {
