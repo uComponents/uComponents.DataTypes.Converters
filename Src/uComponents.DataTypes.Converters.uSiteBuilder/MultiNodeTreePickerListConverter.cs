@@ -59,7 +59,7 @@ namespace uComponents.DataTypes.Converters.uSiteBuilder
         public object ConvertValueWhenWrite(object inputValue)
         {
             var list = inputValue as List<T>;
-            return list != null ? list.Select(n => n.Id.ToString(CultureInfo.InvariantCulture)) : new List<string>();
+            return list == null ? string.Empty : string.Join(",", list.Select(n => n.Id.ToString(CultureInfo.InvariantCulture)));
         }
     }
 }
