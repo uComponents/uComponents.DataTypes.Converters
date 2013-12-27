@@ -17,6 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External Assemblies", "Exte
 	ProjectSection(SolutionItems) = preProject
 		Lib\cms.dll = Lib\cms.dll
 		Lib\interfaces.dll = Lib\interfaces.dll
+		Lib\TheFarm.Umbraco.EmbeddedContent.dll = Lib\TheFarm.Umbraco.EmbeddedContent.dll
 		Lib\uComponents.Core.dll = Lib\uComponents.Core.dll
 		Lib\uComponents.DataTypes.dll = Lib\uComponents.DataTypes.dll
 		Lib\Umbraco.Core.dll = Lib\Umbraco.Core.dll

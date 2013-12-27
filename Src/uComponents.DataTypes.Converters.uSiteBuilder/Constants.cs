@@ -39,10 +39,9 @@
             public const string UrlPickerControlName = "Url Picker";
             public const string UrlPickerControlGuid = DataTypeConstants.UrlPickerId;
 
-            /*
             private static readonly TheFarm.Umbraco.EmbeddedContent.DataEditor EmbeddedContentDataEditor = new TheFarm.Umbraco.EmbeddedContent.DataEditor();
 
-             * /// <summary>
+            /// <summary>
             /// Gets the name of the embedded content control.
             /// </summary>
             /// <value>
@@ -63,7 +62,6 @@
             {
                 get { return EmbeddedContentDataEditor.Id.ToString(); }
             }
-            */
         }
     }
 }

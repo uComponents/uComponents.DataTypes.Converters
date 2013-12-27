@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="cms">
+      <HintPath>..\..\Lib\cms.dll</HintPath>
+    </Reference>
     <Reference Include="interfaces">
       <HintPath>..\..\Lib\interfaces.dll</HintPath>
     </Reference>
@@ -42,6 +45,9 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="TheFarm.Umbraco.EmbeddedContent">
+      <HintPath>..\..\Lib\TheFarm.Umbraco.EmbeddedContent.dll</HintPath>
+    </Reference>
     <Reference Include="uComponents.Core">
       <HintPath>..\..\Lib\uComponents.Core.dll</HintPath>
       <Private>False</Private>
@@ -63,6 +69,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="EmbeddedContentListConverter.cs" />
+    <Compile Include="EmbeddedContent\EmbeddedContentAttribute.cs" />
+    <Compile Include="EmbeddedContent\EmbeddedContentPropertyAttribute.cs" />
+    <Compile Include="EmbeddedContent\EmbeddedContentPropertyType.cs" />
+    <Compile Include="EmbeddedContent\Util.cs" />
     <Compile Include="MapCoordinateTypeConverter.cs" />
     <Compile Include="Types\MapCoordinate.cs" />
     <Compile Include="MultiUrlPickerTypeConverter.cs" />
