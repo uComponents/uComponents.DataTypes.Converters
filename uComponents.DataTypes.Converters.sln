@@ -15,13 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Package", "Build Pack
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External Assemblies", "External Assemblies", "{04F1C33F-EF3D-4F85-90B6-D258F06752D7}"
 	ProjectSection(SolutionItems) = preProject
-		Lib\cms.dll = Lib\cms.dll
-		Lib\interfaces.dll = Lib\interfaces.dll
-		Lib\TheFarm.Umbraco.EmbeddedContent.dll = Lib\TheFarm.Umbraco.EmbeddedContent.dll
 		Lib\uComponents.Core.dll = Lib\uComponents.Core.dll
 		Lib\uComponents.DataTypes.dll = Lib\uComponents.DataTypes.dll
-		Lib\Umbraco.Core.dll = Lib\Umbraco.Core.dll
-		Lib\umbraco.MacroEngines.dll = Lib\umbraco.MacroEngines.dll
 		Lib\Vega.USiteBuilder.dll = Lib\Vega.USiteBuilder.dll
 	EndProjectSection
 EndProject
